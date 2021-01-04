@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Inchoo\Sample04\Block\View" name="view" template="Inchoo_Sample04::view.phtml" />
+        </referenceContainer>
+        <referenceBlock name="view">
+            <arguments>
+                <argument name="view_model" xsi:type="object">Inchoo\Sample04\ViewModel\NewsViewModel</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Inchoo\Sample04\Block\View $block
+ * @var \Inchoo\Sample04\ViewModel\NewsViewModel $viewModel
+ */
+$viewModel = $block->getViewModel();
+$news = $viewModel->getNewsById($block->getNewsId());
+?>
+<h1><?= $news->getTitle() ?></h1>
+<p><small><?= $news->getCreatedAt() ?></small></p>
+<p><?= $news->getContent() ?></p>
+
+
+
+
+

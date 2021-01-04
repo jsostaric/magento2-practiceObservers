@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Inchoo\Sample04\Block\ListBlock" name="list" template="Inchoo_Sample04::list.phtml">
+                <arguments>
+                    <argument name="news_list" xsi:type="object">Inchoo\Sample04\ViewModel\AllNewsViewModel</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

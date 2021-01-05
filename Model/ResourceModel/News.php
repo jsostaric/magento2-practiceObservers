@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Model\ResourceModel;
+namespace Inchoo\EventsObservers\Model\ResourceModel;
 
 class News extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {

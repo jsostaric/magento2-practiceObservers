@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Observer;
+namespace Inchoo\EventsObservers\Observer;
 
 
 use Magento\Framework\Event\Observer;
@@ -18,7 +18,8 @@ class IdLogger implements ObserverInterface
 
     public function execute(Observer $observer)
     {
-        $newsId = $observer->getData()[0];
+        $news = $observer->getNews();
+        $newsId = $news->getId();
         $this->logger->info('News id is: ' . $newsId);
     }
 }

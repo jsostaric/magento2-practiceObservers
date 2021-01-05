@@ -2,6 +2,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Inchoo_Sample04',
+    'Inchoo_EventsObservers',
     __DIR__
 );

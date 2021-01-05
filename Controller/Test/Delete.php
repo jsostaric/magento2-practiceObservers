@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\Test;
+namespace Inchoo\EventsObservers\Controller\Test;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -10,7 +10,7 @@ class Delete extends Action
 {
 
     /**
-     * @var \Inchoo\Sample04\Api\NewsRepositoryInterface
+     * @var \Inchoo\EventsObservers\Api\NewsRepositoryInterface
      */
     protected $newsRepository;
 
@@ -18,11 +18,11 @@ class Delete extends Action
      * Delete constructor.
      *
      * @param Context $context
-     * @param \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository
+     * @param \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository
      */
     public function __construct(
         Context $context,
-        \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository
+        \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository
     ) {
         parent::__construct($context);
         $this->newsRepository = $newsRepository;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Block;
+namespace Inchoo\EventsObservers\Block;
 
 use Magento\Framework\Registry;
 use Magento\Framework\View\Element\Template;

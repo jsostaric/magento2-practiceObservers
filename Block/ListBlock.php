@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Block;
+namespace Inchoo\EventsObservers\Block;
 
 
 use Magento\Framework\View\Element\Template\Context;

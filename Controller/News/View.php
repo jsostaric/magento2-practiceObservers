@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\News;
+namespace Inchoo\EventsObservers\Controller\News;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -39,7 +39,6 @@ class View extends Action
         }
 
         $this->newsRegistry->register('inchoo_news_id', $id);
-        $this->_eventManager->dispatch('inchoo_news_id_log', [$id]);
         return $this->resultPageFactory->create();
     }
 }

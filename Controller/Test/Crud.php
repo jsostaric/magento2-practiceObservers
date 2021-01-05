@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\Test;
+namespace Inchoo\EventsObservers\Controller\Test;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -10,12 +10,12 @@ use Magento\Framework\Exception\NoSuchEntityException;
 class Crud extends Action
 {
     /**
-     * @var \Inchoo\Sample04\Api\NewsRepositoryInterface
+     * @var \Inchoo\EventsObservers\Api\NewsRepositoryInterface
      */
     protected $newsRepository;
 
     /**
-     * @var \Inchoo\Sample04\Api\Data\NewsInterfaceFactory
+     * @var \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory
      */
     protected $newsModelFactory;
 
@@ -23,13 +23,13 @@ class Crud extends Action
      * Crud constructor.
      *
      * @param Context $context
-     * @param \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository
-     * @param \Inchoo\Sample04\Api\Data\NewsInterfaceFactory $newsModelFactory
+     * @param \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository
+     * @param \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory $newsModelFactory
      */
     public function __construct(
         Context $context,
-        \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository,
-        \Inchoo\Sample04\Api\Data\NewsInterfaceFactory $newsModelFactory
+        \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository,
+        \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory $newsModelFactory
     ) {
         parent::__construct($context);
         $this->newsRepository = $newsRepository;

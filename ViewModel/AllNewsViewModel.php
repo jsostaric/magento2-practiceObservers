@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\ViewModel;
+namespace Inchoo\EventsObservers\ViewModel;
 
 
 use Magento\Framework\Api\SearchCriteriaBuilder;
@@ -15,7 +15,7 @@ class AllNewsViewModel implements ArgumentInterface
     protected $sortOrder;
 
     public function __construct(
-        \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository,
+        \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository,
         SearchCriteriaBuilder $searchCriteriaBuilder,
         SortOrder $sortOrder
     )

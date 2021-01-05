@@ -1,24 +1,24 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\Test;
+namespace Inchoo\EventsObservers\Controller\Test;
 
 use Magento\Framework\App\Action\Context;
 
 class Collection  extends \Magento\Framework\App\Action\Action
 {
     /**
-     * @var \Inchoo\Sample04\Model\ResourceModel\News\Collection
+     * @var \Inchoo\EventsObservers\Model\ResourceModel\News\Collection
      */
     protected $newsCollectionFactory;
 
     /**
      * Controller constructor.
      * @param Context $context
-     * @param \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory
+     * @param \Inchoo\EventsObservers\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory
      */
     public function __construct(
         Context $context,
-        \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory
+        \Inchoo\EventsObservers\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory
     ) {
         parent::__construct($context);
 

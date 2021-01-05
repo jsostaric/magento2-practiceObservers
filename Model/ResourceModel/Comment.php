@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Model\ResourceModel;
+namespace Inchoo\EventsObservers\Model\ResourceModel;
 
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\Test;
+namespace Inchoo\EventsObservers\Controller\Test;
 
-use Inchoo\Sample04\Api\Data\NewsInterface;
-use Inchoo\Sample04\Api\NewsRepositoryInterface;
+use Inchoo\EventsObservers\Api\Data\NewsInterface;
+use Inchoo\EventsObservers\Api\NewsRepositoryInterface;
 
 use Magento\Framework\Api\FilterBuilder;
 
@@ -15,12 +15,12 @@ use Magento\Framework\App\Action\Context;
 class Getlist extends Action
 {
     /**
-     * @var \Inchoo\Sample04\Api\NewsRepositoryInterface
+     * @var \Inchoo\EventsObservers\Api\NewsRepositoryInterface
      */
     protected $newsRepository;
 
     /**
-     * @var \Inchoo\Sample04\Api\Data\NewsInterfaceFactory
+     * @var \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory
      */
     protected $newsModelFactory;
 
@@ -44,7 +44,7 @@ class Getlist extends Action
      */
     public function __construct(
         Context $context,
-        \Inchoo\Sample04\Api\NewsRepositoryInterface $newsRepository,
+        \Inchoo\EventsObservers\Api\NewsRepositoryInterface $newsRepository,
         FilterBuilder $filterBuilder,
         SearchCriteriaBuilder $searchCriteriaBuilder
     ) {

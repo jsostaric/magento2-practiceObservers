@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Controller\News;
+namespace Inchoo\EventsObservers\Controller\News;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -8,7 +8,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 /**
  * Class ListAction
- * @package Inchoo\Sample04\Controller\Index
+ * @package Inchoo\EventsObservers\Controller\Index
  *
  * List is reserved keyword in PHP, so we're using Action suffix in controller name !!
  */

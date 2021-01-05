@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Api\Data;
+namespace Inchoo\EventsObservers\Api\Data;
 
 
 interface CommentInterface

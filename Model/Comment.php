@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Model;
+namespace Inchoo\EventsObservers\Model;
 
 
 use Inchoo\Sample04\Api\Data\CommentInterface;
@@ -11,7 +11,7 @@ class Comment extends AbstractModel implements CommentInterface
 {
     public function __construct()
     {
-        $this->_init(\Inchoo\Sample04\Model\ResourceModel\Comment::class);
+        $this->_init(\Inchoo\EventsObservers\Model\ResourceModel\Comment::class);
     }
 
     public function getId()

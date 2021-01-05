@@ -1,6 +1,6 @@
 <?php
 
-namespace Inchoo\Sample04\Setup;
+namespace Inchoo\EventsObservers\Setup;
 
 use Magento\Framework\DB\Adapter\AdapterInterface;
 use Magento\Framework\DB\Ddl\Table;

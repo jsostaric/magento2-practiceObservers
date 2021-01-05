@@ -1,9 +1,9 @@
 <?php
 
-namespace Inchoo\Sample04\Model;
+namespace Inchoo\EventsObservers\Model;
 
-use Inchoo\Sample04\Api\Data\NewsInterface;
-use Inchoo\Sample04\Api\NewsRepositoryInterface;
+use Inchoo\EventsObservers\Api\Data\NewsInterface;
+use Inchoo\EventsObservers\Api\NewsRepositoryInterface;
 use Magento\Framework\Api\SearchCriteria\CollectionProcessorInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\CouldNotDeleteException;
@@ -13,22 +13,22 @@ use Magento\Framework\Exception\NoSuchEntityException;
 class NewsRepository implements NewsRepositoryInterface
 {
     /**
-     * @var \Inchoo\Sample04\Api\Data\NewsInterfaceFactory
+     * @var \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory
      */
     protected $newsModelFactory;
 
     /**
-     * @var \Inchoo\Sample04\Model\ResourceModel\News
+     * @var \Inchoo\EventsObservers\Model\ResourceModel\News
      */
     protected $newsResource;
 
     /**
-     * @var \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory
+     * @var \Inchoo\EventsObservers\Model\ResourceModel\News\CollectionFactory
      */
     protected $newsCollectionFactory;
 
     /**
-     * @var \Inchoo\Sample04\Api\Data\NewsSearchResultsInterface
+     * @var \Inchoo\EventsObservers\Api\Data\NewsSearchResultsInterface
      */
     protected $searchResultsFactory;
 
@@ -38,10 +38,10 @@ class NewsRepository implements NewsRepositoryInterface
     protected $collectionProcessor;
 
     public function __construct(
-        \Inchoo\Sample04\Api\Data\NewsInterfaceFactory $newsModelFactory,
-        \Inchoo\Sample04\Api\Data\NewsSearchResultsInterfaceFactory $newsSearchResultsFactory,
-        \Inchoo\Sample04\Model\ResourceModel\News $newsResource,
-        \Inchoo\Sample04\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory,
+        \Inchoo\EventsObservers\Api\Data\NewsInterfaceFactory $newsModelFactory,
+        \Inchoo\EventsObservers\Api\Data\NewsSearchResultsInterfaceFactory $newsSearchResultsFactory,
+        \Inchoo\EventsObservers\Model\ResourceModel\News $newsResource,
+        \Inchoo\EventsObservers\Model\ResourceModel\News\CollectionFactory $newsCollectionFactory,
         CollectionProcessorInterface $collectionProcessor
     ) {
         $this->newsResource = $newsResource;
@@ -94,7 +94,7 @@ class NewsRepository implements NewsRepositoryInterface
 
     public function getList(SearchCriteriaInterface $searchCriteria)
     {
-        /** @var \Inchoo\Sample04\Model\ResourceModel\News\Collection $collection */
+        /** @var \Inchoo\EventsObservers\Model\ResourceModel\News\Collection $collection */
         $collection = $this->newsCollectionFactory->create();
 
         $this->collectionProcessor->process($searchCriteria, $collection);

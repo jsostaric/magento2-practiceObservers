@@ -1,8 +1,8 @@
 <?php
 
-namespace Inchoo\Sample04\Model;
+namespace Inchoo\EventsObservers\Model;
 
-use Inchoo\Sample04\Api\Data\NewsInterface;
+use Inchoo\EventsObservers\Api\Data\NewsInterface;
 
 class News extends \Magento\Framework\Model\AbstractModel implements NewsInterface
 {
@@ -13,7 +13,7 @@ class News extends \Magento\Framework\Model\AbstractModel implements NewsInterfa
      */
     protected function _construct()
     {
-        $this->_init(\Inchoo\Sample04\Model\ResourceModel\News::class);
+        $this->_init(\Inchoo\EventsObservers\Model\ResourceModel\News::class);
     }
 
     public function getId()

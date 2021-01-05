@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Inchoo\Sample04\Setup;
+namespace Inchoo\EventsObservers\Setup;
 
 
-use Inchoo\Sample04\Model\NewsFactory;
+use Inchoo\EventsObservers\Model\NewsFactory;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
@@ -14,7 +14,7 @@ class InstallData implements InstallDataInterface
     protected $newsFactory;
     protected $newsResource;
 
-    public function __construct(\Inchoo\Sample04\Model\ResourceModel\News $newsResource, NewsFactory $newsFactory)
+    public function __construct(\Inchoo\EventsObservers\Model\ResourceModel\News $newsResource, NewsFactory $newsFactory)
     {
         $this->newsFactory = $newsFactory;
         $this->newsResource = $newsResource;

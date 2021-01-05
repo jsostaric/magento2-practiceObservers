@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Api;
+namespace Inchoo\EventsObservers\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 
@@ -11,7 +11,7 @@ interface NewsRepositoryInterface
      * Retreive news.
      *
      * @param int $newsId
-     * @return \Inchoo\Sample04\Api\Data\NewsInterface
+     * @return \Inchoo\EventsObservers\Api\Data\NewsInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getById(int $newsId);
@@ -19,8 +19,8 @@ interface NewsRepositoryInterface
     /**
      * Save news.
      *
-     * @param \Inchoo\Sample04\Api\Data\NewsInterface $news
-     * @return \Inchoo\Sample04\Api\Data\NewsInterface
+     * @param \Inchoo\EventsObservers\Api\Data\NewsInterface $news
+     * @return \Inchoo\EventsObservers\Api\Data\NewsInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function save(Data\NewsInterface $news);
@@ -28,7 +28,7 @@ interface NewsRepositoryInterface
     /**
      * Delete news
      *
-     * @param \Inchoo\Sample04\Api\Data\NewsInterface $news
+     * @param \Inchoo\EventsObservers\Api\Data\NewsInterface $news
      * @return bool true on success
      * @throws \Magento\Framework\Exception\LocalizedException
      */
@@ -38,7 +38,7 @@ interface NewsRepositoryInterface
      * Retrieve news matching the specified search criteria
      *
      * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
-     * @return \Inchoo\Sample04\Api\Data\NewsSearchResultsInterface
+     * @return \Inchoo\EventsObservers\Api\Data\NewsSearchResultsInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     public function getList(SearchCriteriaInterface $searchCriteria);

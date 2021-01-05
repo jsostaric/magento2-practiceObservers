@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="inchoo_news_id_log">
-        <observer name="IdLogger" instance="Inchoo\Sample04\Observer\IdLogger"/>
+        <observer name="IdLogger" instance="Inchoo\EventsObservers\Observer\IdLogger"/>
     </event>
 </config>

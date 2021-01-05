@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Inchoo\Sample04\Api;
+namespace Inchoo\EventsObservers\Api;
 
 
 interface CommentRepositoryInterface
@@ -14,7 +14,7 @@ interface CommentRepositoryInterface
 
     /**
      * @param Data\CommentInterface $comment
-     * @return \Inchoo\Sample04\Api\Data\CommentInterface
+     * @return \Inchoo\EventsObservers\Api\Data\CommentInterface
      */
     public function save(Data\CommentInterface $comment);
 
